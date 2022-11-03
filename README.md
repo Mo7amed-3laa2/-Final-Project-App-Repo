@@ -27,3 +27,4 @@ Create the pipline script file that will pull the app-code from the repo then bu
 
 ![image](https://user-images.githubusercontent.com/32172405/199647621-b77083f9-1d61-4195-800a-d37f77d5db9d.png)
 
+You Can try it http://34.28.226.32/
