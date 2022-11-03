@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: simple-app
-        image: mohamedalaa98/simple-app-node:V2.1        # V2.${BUILD_ID} change build id every new update
+        image: mohamedalaa98/simple-app-node:V2.11        # V2.${BUILD_ID} change build id every new update
         ports:
         - name: http
           containerPort: 3000
