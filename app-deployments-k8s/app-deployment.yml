@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simple-app
+  labels:
+    app: simple-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: simple-app
+  template:
+    metadata:
+      labels:
+        app: simple-app
+        type: frontend
+    spec:
+      containers:
+      - name: simple-app
+        image: mohamedalaa98/simple-app-node:V2.1        # V2.${BUILD_ID} change build id every new update
+        ports:
+        - name: http
+          containerPort: 3000
