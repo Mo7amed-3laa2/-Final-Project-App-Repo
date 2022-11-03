@@ -6,9 +6,8 @@ agent any
             steps {
                 echo 'building the application...'
                 echo "Get code from a GitHub repository at branch '${ env.BRANCH_NAME }'..."
-                //git 'https://github.com/Mo7amed-3laa2/jenkins_nodejs_example.git'
                 echo 'build simple-app docker image...........'
-                sh "docker build --tag mohamedalaa98/simple-app-node:V2.${BUILD_ID} ."
+                sh "docker build --tag mohamedalaa98/simple-app-node:V1.0 ."
                 }
         }
         stage('Push') {
@@ -16,7 +15,7 @@ agent any
                 echo "push simple-app image to docker-hub"
                 withCredentials([usernamePassword(credentialsId: 'docker-hub', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
                 sh "echo $PASS | docker login -u $USER --password-stdin"
-                sh "docker push mohamedalaa98/simple-app-node:V2.${BUILD_ID}" 
+                sh "docker push mohamedalaa98/simple-app-node:V1.0" 
                 }
             }
         }
