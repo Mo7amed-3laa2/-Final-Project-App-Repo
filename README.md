@@ -20,3 +20,10 @@ Create the pipline script file that will pull the app-code from the repo then bu
 ## 3. Create The Application Deployments files.
 
 ![image](https://user-images.githubusercontent.com/32172405/199647238-d51087d7-24b0-409d-9bf1-faa96cc1e2a8.png)
+
+![image](https://user-images.githubusercontent.com/32172405/199647516-f4387a45-a5af-463a-94d4-2f8047b5bd68.png)
+
+## 4. Test The Application.
+
+![image](https://user-images.githubusercontent.com/32172405/199647621-b77083f9-1d61-4195-800a-d37f77d5db9d.png)
+
